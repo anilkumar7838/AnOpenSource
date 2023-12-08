@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/views/footer/footer.js";
 import Home from "./components/Home/Home.js";
-import Contact from "./components/views/Contact/Contact"
-import About from "./components/views/About/About"
+import Contact from "./components/views/Contact/Contact.js/index.js"
+import About from "./components/views/About/About.js/index.js"
 import Navbar from "./components/views/Navbar/Navbar";
 
 function App() {
