@@ -1,0 +1,124 @@
+/* Navbar.css */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, #1C1C1C, #1C1C1C),
+                linear-gradient(0deg, #262626, #262626);
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: 1px solid;
+    justify-content: space-between;
+    width: 84%;
+    margin: 0 auto;
+    margin-top:  15px;
+    height: 80px;
+    
+  }
+  
+  .nav-left {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .nav-logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .nav-center{
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-center ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-center li {
+    padding: 5px 20px;
+    border-radius: 82px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .nav-center a {
+    text-decoration: none;
+    color: white;
+    font-family: "Lexend";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
+  }
+  
+  .nav-center li:hover {
+    color: #CAFF33;
+    background-color: #262626;
+  }
+  
+  .nav-right {
+    /* border: 2px solid red; */
+    display: flex;
+  }
+  
+  .nav-right button {
+    text-decoration: none;
+    width: 87px;
+    height: 45px;
+    padding: 12px, 24px, 12px, 24px;
+    border-radius: 82px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-right button:hover {
+    color: black;
+    background-color: #CAFF33;
+  }
+  
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .nav-container {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 12px;
+      left: 0;
+      border-radius: 0;
+  }
+
+  .nav-left, .nav-center, .nav-right {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .nav-logo {
+      margin-right: 0;
+  }
+
+  .nav-center ul {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+  }
+
+  .nav-center li {
+      width: 100%;
+  }
+
+  .nav-right {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
